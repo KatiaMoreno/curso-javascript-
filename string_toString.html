@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript - Gustavo Guanabara e Hcode</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt arial;
+        }
+
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript</h1>
+    <h2>Tratamento de dados</h2>
+
+    <p>
+        Ola Mundo! <br>
+        Me livre da maldicao
+    </p>
+
+    <script>
+        /*
+        // ESTE RESULTADO NAO E UMA SOME E SIM UMA CONCATNACAO DE 2 STRING
+        var n1 = window.prompt('digit numero :') // string
+        var n2 = window.prompt("digite outro numero :") // string
+        var total = n1 + n2 // tem que fazer conversao de numero
+        window.alert('a soma e :' + total)
+
+        //(numero + numero) para adicao
+        // (string + string ) para concatenacao
+        */
+
+        //RESULTADO PARA UMA SOMA
+        //CONVERTE STRING EM NUMERO - USANDO Number.parseInt(n)
+
+        /*
+        var n1 = Number.parseFloat(window.prompt("digite um numero: "))//parseFloat: usado para com numeros que tem pontos
+        var n2 = Number.parseInt(window.prompt("digite outr numero: ")) //parseFloat: usado para com numeros inteiros
+        var s = n1 + n2 
+        window.alert("a soma e: " + s)
+        */
+
+        var n1 = Number(window.prompt("digite um numero: "))//parseFloat: usado para com numeros que tem pontos
+        var n2 = Number(window.prompt("digite outr numero: ")) //parseFloat: usado para com numeros inteiros
+        var s = n1 + n2
+        window.alert("a soma e: " + s.toString()) // ou //window.alert("a soma e: " + String(s))
+
+       // window.alert(`A soma de: ${n1} + ${n2}  =  ${s}`)
+
+    </script>
+
+
+</body>
+
+</html>
