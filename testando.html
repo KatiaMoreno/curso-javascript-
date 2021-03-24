@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var broken = false
+      function workLamp (valor){
+        if (!broken){
+            document.getElementById("luz").src="_imagens/" + valor+ ".jpg"
+            if(valor == "lampada-quebrada"){
+                broken = true
+             }
+         }
+      }
+
+    </script>
+</head>
+
+<body>
+
+  <img src="_imagens/lampada-apagada.jpg" id="luz"
+  onmouseover="workLamp('lampada-acesa')" 
+  onmouseout="workLamp('lampada-apagada')" 
+  onclick="workLamp('lampada-quebrada')" >
+
+
+
+</body>
+
+</html>
